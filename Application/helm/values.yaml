@@ -4,6 +4,6 @@ containers:
   containerPort: 8080
   image: 'quay.io/hindar/hello-world'
   tag: 'v3'
-
+  
 service:
   servicePort: 8080
