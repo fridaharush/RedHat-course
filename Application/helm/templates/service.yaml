@@ -1,5 +1,5 @@
 kind: Service
-apiVersion: v33
+apiVersion: v1
 metadata:
   name: {{ .Chart.Name }}-service
 spec:

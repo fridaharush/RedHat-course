@@ -1,5 +1,5 @@
 kind: Deployment
-apiVersion: apps/v33
+apiVersion: apps/v1
 metadata:
 # set your lab user name
   name: user3-hello-world
