@@ -2,7 +2,7 @@ ReplicaNumber: 3
 
 containers:
   containerPort: 8080
-  image: 'quay.io/hindar/hello-world:v33'
+  image: 'quay.io/hindar/hello-world:v3'
   tag: 'base'
 
 service:
