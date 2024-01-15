@@ -30,27 +30,3 @@ spec:
       maxUnavailable: 25%
       maxSurge: 25%
   revisionHistoryLimit: 10
-  template:
-    metadata:
-      labels:
-# set your lab user name
-        app: user3-hello-world
-    spec:
-      containers:
-        - resources: {}
-          terminationMessagePath: /dev/termination-log
-          name: hello-world
-          ports:
-            - containerPort: 8080
-              protocol: TCP
-          imagePullPolicy: IfNotPresent
-# Update with the image you build in part 1
-          image: 'quay.io/hindar/hello-world:v3'
-      restartPolicy: Always
-      terminationGracePeriodSeconds: 30
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxUnavailable: 25%
-      maxSurge: 25%
-  revisionHistoryLimit: 10
