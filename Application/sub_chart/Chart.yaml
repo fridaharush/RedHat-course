@@ -4,7 +4,7 @@ description: A Helm chart for Kubernetes
 type: application
 dependencies:
   - name: hello-world-1.0.0.tgz
-    repository: oci://ghcr.io/fridaharush/helm/
+    repository: oci://ghcr.io/fridaharush/helm
     version: "1.0.0"
     alias: deploy1
 version: 1.0.0
